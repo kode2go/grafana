@@ -8,31 +8,42 @@ Install Grafana: Install Grafana on your Ubuntu system. You can do this by addin
 
 bash
 Copy code
+```
 sudo apt-get install -y software-properties-common
 sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install grafana
+```
+
 Start and Enable Grafana Service:
 Once installed, start the Grafana service and enable it to start at boot:
 
 bash
 Copy code
+```
 sudo systemctl start grafana-server
 sudo systemctl enable grafana-server
+```
+
 Access Grafana Web Interface:
 Open a web browser and access the Grafana web interface by entering the following URL:
 
 arduino
 Copy code
+```
 http://localhost:3000
+```
 Grafana runs by default on port 3000. You should see the Grafana login page.
 
 Log In to Grafana:
 Log in with the default credentials:
 
+```
 Username: admin
 Password: admin
+```
+
 You will be prompted to change the password upon your first login.
 
 Configure InfluxDB Data Source:
@@ -57,7 +68,7 @@ http://172.18.0.2:3000
 
 # Setup
 
-o configure InfluxDB as a data source in Grafana and connect it to your InfluxDB database (created with Python), you can use the following settings. The specific values you need to replace are noted in the comments:
+To configure InfluxDB as a data source in Grafana and connect it to your InfluxDB database (created with Python), you can use the following settings. The specific values you need to replace are noted in the comments:
 
 In Grafana:
 
