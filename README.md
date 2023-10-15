@@ -46,3 +46,12 @@ Fill in the necessary connection details for your InfluxDB server (host, port, a
 Click "Save & Test" to ensure the connection is successful.
 Create Dashboards:
 Once you've configured InfluxDB as a data source, you can start creating dashboards in Grafana to visualize and explore your InfluxDB data.
+
+```
+sudo service grafana-server start
+```
+
+```
+http://172.18.0.2:3000
+
+```
